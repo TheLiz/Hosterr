@@ -361,37 +361,52 @@ svg {fill: currentColor;}
 
   .hero__img {
     position: relative;
+    max-width: 448px;
+    height: 454px;
   }
     .hero__photo{
       position: absolute;
+      max-width: 387px;
+      height: 443px;
       top: 0;
-      left: 50%;
       z-index: 4;
     }
 
     .purple-shape {
+      max-width: 488px;
+      height: 528px;
       position: absolute;
-      top: 0;
-      left: 50%;
+      top: -50px;
       transform: rotate(-15deg);
       z-index: 3;
     }
 
     .pink-shape {
       position: absolute;
-      top: 0;
-      left: 50%;
+      max-width: 556px;
+      height: 577px;
+      top: -75px;
       transform: rotate(-30deg);
       z-index: 2;
     }
 
     .blue-shape {
       position: absolute;
-      top: 0;
-      left: 50%;
+      max-width: 586px;
+      height: 586px;
+      top: -100px;
       transform: rotate(-45deg);
       z-index: 1;
     }
+
+@media (max-width: 64rem) {
+  .hero {grid-template-columns: 1fr;}
+  .hero__img {
+    grid-row: 1;
+    margin: 0 auto;
+  }
+  .hero__body {grid-row: 2;}
+}
 
 /* #SITE FOOTER ---------------------- */
 .site__footer {
